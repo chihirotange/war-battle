@@ -1,0 +1,27 @@
+name: "main"
+instances {
+  id: "player"
+  prototype: "/main/player.go"
+  position {
+    x: 87.0
+    y: 71.0
+    z: 1.0
+  }
+}
+scale_along_z: 0
+embedded_instances {
+  id: "map"
+  data: "components {\n"
+  "  id: \"map\"\n"
+  "  component: \"/main/map.tilemap\"\n"
+  "  position {\n"
+  "    x: 101.0\n"
+  "    y: 59.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: -21.0
+    y: -11.0
+  }
+}
